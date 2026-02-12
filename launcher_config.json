@@ -31,6 +31,6 @@ NOTE: Set it to "false" or only "" to not use the client folder, so everything w
 	"clientFolder": "Client_Online-GBOT",
 	"newClientUrl" : "https://github.com/caduhsn/launcher_gbot/releases/download/1.0/Client_Online-GBOT.zip",
 	"baseClientUrl": "https://github.com/caduhsn/launcher_gbot/releases/download/1.0/Client_Online-GBOT.zip",
-	"updateClientUrl": "",
+	"updateClientUrl": "https://github.com/caduhsn/launcher_gbot/releases/download/15.11.01/Client_Online-GBOT.zip",
 	"clientExecutable": "otclient_dx_x64.exe"
 }
