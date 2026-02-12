@@ -15,7 +15,7 @@
 */
 {
 	/* Troque para a nova versão sempre que publicar um update */
-	"clientVersion": "13.20.13560",
+	"clientVersion": "1.0",
 	
 	/* Opcional: versão do launcher (UI) */
 	"launcherVersion": "1.0",
@@ -24,37 +24,31 @@
 	"replaceFolders": true,
 	"replaceFolderName": [
 		{
-			"name": "assets"
-		},
-		{
-			"name": "storeimages"
-		},
-		{
-			"name": "bin"
+			"name": "data/things/1511"
 		}
 	],
 	
 	/* Pasta do client dentro do diretório do launcher */
-	"clientFolder": "Tibia",
+	"clientFolder": "Client_Online-GBOT",
 	
 	/* ZIP completo: usado na primeira instalação (quando não existe bin/client.exe) */
-	"newClientUrl": "https://github.com/SEU_USUARIO/SEU_REPO/releases/download/v13.20.13560/client-full.zip",
+	"newClientUrl": "https://github.com/caduhsn/launcher_gbot/releases/download/1.0/otcliente-gbot.zip",
 	
 	/* Executável do client dentro de <clientFolder>/bin/ */
-	"clientExecutable": "client.exe",
+	"clientExecutable": "otclient_dx_x64.exe",
 	
 	/* Updates incrementais (somente arquivos alterados) */
 	"updateFiles": [
 		{
 			/* Exemplo: atualizar somente assets */
 			"path": "assets/sprites.otc",
-			"url": "https://github.com/SEU_USUARIO/SEU_REPO/releases/download/v13.20.13560/assets/sprites.otc",
+			"url": "",
 			"sha256": ""
 		},
 		{
 			/* Exemplo: atualizar somente um módulo */
 			"path": "modules/game_ui.otmod",
-			"url": "https://github.com/SEU_USUARIO/SEU_REPO/releases/download/v13.20.13560/modules/game_ui.otmod",
+			"url": "",
 			"sha256": ""
 		}
 	]
