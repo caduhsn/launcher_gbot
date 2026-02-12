@@ -10,7 +10,7 @@ NOTE: Set it to "false" or only "" to not use the client folder, so everything w
 */
 {
 	"clientVersion": "15.11.01",
-	"launcherVersion": "1.0",
+	"launcherVersion": "1.1",
 	"launcherUpdateUrl": "https://github.com/caduhsn/launcher_gbot/releases/download/updateLauncher/updateLauncher.zip",
 	"replaceFolders": false,
 	"replaceFolderName": [
