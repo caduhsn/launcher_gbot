@@ -1,0 +1,61 @@
+/**
+• JSON configuration file for the Client Updater
+• clientVersion Versão do client (dispara update quando muda)
+• launcherVersion Versão do launcher (apenas exibida na UI no código atual)
+• clientFolder Pasta raiz do client dentro do diretório do launcher (ex.: "Tibia")
+• newClientUrl URL do ZIP completo (primeira instalação / fallback)
+• clientExecutable Nome do executável em "<clientFolder>/bin/" (ex.: "client.exe")
+• replaceFolders / replaceFolderName Usado apenas no fluxo ZIP (apaga pastas antes de extrair)
+
+• updateFiles (incremental)
+  - Se estiver preenchido E o client já estiver instalado, o launcher baixa somente os arquivos listados
+  - path: caminho relativo dentro de <clientFolder> (use "/" como separador)
+  - url: link direto do arquivo no seu servidor/CDN/GitHub
+  - sha256: opcional; se vazio/ausente, não valida integridade
+*/
+{
+	/* Troque para a nova versão sempre que publicar um update */
+	"clientVersion": "13.20.13560",
+	
+	/* Opcional: versão do launcher (UI) */
+	"launcherVersion": "1.0",
+	
+	/* Se true, apaga pastas listadas antes de extrair o ZIP completo */
+	"replaceFolders": true,
+	"replaceFolderName": [
+		{
+			"name": "assets"
+		},
+		{
+			"name": "storeimages"
+		},
+		{
+			"name": "bin"
+		}
+	],
+	
+	/* Pasta do client dentro do diretório do launcher */
+	"clientFolder": "Tibia",
+	
+	/* ZIP completo: usado na primeira instalação (quando não existe bin/client.exe) */
+	"newClientUrl": "https://github.com/SEU_USUARIO/SEU_REPO/releases/download/v13.20.13560/client-full.zip",
+	
+	/* Executável do client dentro de <clientFolder>/bin/ */
+	"clientExecutable": "client.exe",
+	
+	/* Updates incrementais (somente arquivos alterados) */
+	"updateFiles": [
+		{
+			/* Exemplo: atualizar somente assets */
+			"path": "assets/sprites.otc",
+			"url": "https://github.com/SEU_USUARIO/SEU_REPO/releases/download/v13.20.13560/assets/sprites.otc",
+			"sha256": ""
+		},
+		{
+			/* Exemplo: atualizar somente um módulo */
+			"path": "modules/game_ui.otmod",
+			"url": "https://github.com/SEU_USUARIO/SEU_REPO/releases/download/v13.20.13560/modules/game_ui.otmod",
+			"sha256": ""
+		}
+	]
+}
