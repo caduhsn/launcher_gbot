@@ -13,7 +13,7 @@ https://github.com/caduhsn/launcher_gbot/releases/download/15.11.01/updateClient
 
 */
 {
-	"clientVersion": "15.11.00",
+	"clientVersion": "15.11.01",
 	"launcherVersion": "1.0",
 	"launcherUpdateUrl": "",
 	"replaceFolders": false,
@@ -35,6 +35,6 @@ https://github.com/caduhsn/launcher_gbot/releases/download/15.11.01/updateClient
 	"clientFolder": "Client_Online-GBOT",
 	"newClientUrl" : "https://github.com/caduhsn/launcher_gbot/releases/download/1.0/Client_Online-GBOT.zip",
 	"baseClientUrl": "https://github.com/caduhsn/launcher_gbot/releases/download/1.0/Client_Online-GBOT.zip",
-	"updateClientUrl": "",
+	"updateClientUrl": "https://github.com/caduhsn/launcher_gbot/releases/download/15.11.01/updateClient_1.0.zip",
 	"clientExecutable": "otclient_dx_x64.exe"
 }
