@@ -9,9 +9,9 @@ NOTE: Set it to "false" or only "" to not use the client folder, so everything w
 • executable The path to the client's executable file, represented as "bin/client.exe"
 */
 {
-	"clientVersion": "15.11.01",
-	"launcherVersion": "1.1",
-	"launcherUpdateUrl": "https://github.com/caduhsn/launcher_gbot/releases/download/updateLauncher/updateLauncher.zip",
+	"clientVersion": "15.11.00",
+	"launcherVersion": "1.0",
+	"launcherUpdateUrl": "",
 	"replaceFolders": false,
 	"replaceFolderName": [
 /*		{
@@ -31,6 +31,6 @@ NOTE: Set it to "false" or only "" to not use the client folder, so everything w
 	"clientFolder": "Client_Online-GBOT",
 	"newClientUrl" : "https://github.com/caduhsn/launcher_gbot/releases/download/1.0/Client_Online-GBOT.zip",
 	"baseClientUrl": "https://github.com/caduhsn/launcher_gbot/releases/download/1.0/Client_Online-GBOT.zip",
-	"updateClientUrl": "https://github.com/caduhsn/launcher_gbot/releases/download/15.11.01/Client_Online-GBOT.zip",
+	"updateClientUrl": "https://github.com/caduhsn/launcher_gbot/releases/download/15.11.01/updateClient_1.0.zip",
 	"clientExecutable": "otclient_dx_x64.exe"
 }
