@@ -1,42 +1,29 @@
 /**
 • JSON configuration file for the Client Updater
-• clientVersion Versão do client (dispara update quando muda)
-• launcherVersion Versão do launcher (apenas exibida na UI no código atual)
-• clientFolder Pasta raiz do client dentro do diretório do launcher (ex.: "Tibia")
-• newClientUrl URL do ZIP completo (primeira instalação / fallback)
-• clientExecutable Nome do executável em "<clientFolder>/bin/" (ex.: "client.exe")
-• replaceFolders / replaceFolderName Usado apenas no fluxo ZIP (apaga pastas antes de extrair)
-
-• updateFiles (incremental)
-  - Se estiver preenchido E o client já estiver instalado, o launcher baixa somente os arquivos listados
-  - path: caminho relativo dentro de <clientFolder> (use "/" como separador)
-  - url: link direto do arquivo no seu servidor/CDN/GitHub
-  - sha256: opcional; se vazio/ausente, não valida integridade
+• version The version of the client, represented as "major.minor.patch".
+• replaceFolders Whether the updater should replace the client's current folders
+• folders An array of objects representing the client's folders, each object has the key "name"
+• clientFolder The name of the main client folder, represented as "Tibia"
+NOTE: Set it to "false" or only "" to not use the client folder, so everything will be added to the main folder
+• newClientUrl The URL where the new client version can be downloaded from
+• executable The path to the client's executable file, represented as "bin/client.exe"
 */
 {
-	/* Troque para a nova versão sempre que publicar um update */
-	"clientVersion": "1.0",
-	
-	/* Opcional: versão do launcher (UI) */
+	"clientVersion": "13.20.13560",
 	"launcherVersion": "1.0",
-	
-	/* Se true, apaga pastas listadas antes de extrair o ZIP completo */
-	"replaceFolders": false,
+	"replaceFolders": true,
 	"replaceFolderName": [
 		{
-			"name": "data/things/1511"
+			"name": "assets"
+		},
+		{
+			"name": "storeimages"
+		},
+		{
+			"name": "bin"
 		}
 	],
-	
-	/* Pasta do client dentro do diretório do launcher */
-	"clientFolder": "Client_Online-GBOT",
-	
-	/* ZIP completo: usado na primeira instalação (quando não existe bin/client.exe) */
-	"newClientUrl": "https://github.com/caduhsn/launcher_gbot/releases/download/1.0/otcliente-gbot.zip",
-	
-	/* Executável do client dentro de <clientFolder>/bin/ */
-	"clientExecutable": "otclient_dx_x64.exe",
-	
-	/* Updates incrementais (somente arquivos alterados) */
-	"updateFiles": []
+	"clientFolder": "Tibia",
+	"newClientUrl" : "https://github.com/opentibiabr/canary-launcher/releases/download/1.0.0/client-to-update.zip",
+	"clientExecutable": "client.exe"
 }
