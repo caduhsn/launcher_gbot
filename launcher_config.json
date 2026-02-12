@@ -21,7 +21,7 @@
 	"launcherVersion": "1.0",
 	
 	/* Se true, apaga pastas listadas antes de extrair o ZIP completo */
-	"replaceFolders": true,
+	"replaceFolders": false,
 	"replaceFolderName": [
 		{
 			"name": "data/things/1511"
@@ -38,18 +38,5 @@
 	"clientExecutable": "otclient_dx_x64.exe",
 	
 	/* Updates incrementais (somente arquivos alterados) */
-	"updateFiles": [
-		{
-			/* Exemplo: atualizar somente assets */
-			"path": "assets/sprites.otc",
-			"url": "",
-			"sha256": ""
-		},
-		{
-			/* Exemplo: atualizar somente um módulo */
-			"path": "modules/game_ui.otmod",
-			"url": "",
-			"sha256": ""
-		}
-	]
+	"updateFiles": []
 }
