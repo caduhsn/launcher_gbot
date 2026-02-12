@@ -18,6 +18,6 @@ NOTE: Set it to "false" or only "" to not use the client folder, so everything w
 		}
 	],
 	"clientFolder": "Client_Online-GBOT",
-	"newClientUrl" : "https://github.com/opentibiabr/canary-launcher/releases/download/1.0.0/client-to-update.zip",
+	"newClientUrl" : "https://github.com/caduhsn/launcher_gbot/releases/download/1.0/otcliente-gbot.zip",
 	"clientExecutable": "otclient_dx_x64.exe"
 }
